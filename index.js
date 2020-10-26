@@ -35,6 +35,20 @@ var controlRe = /[\x00-\x1f\x80-\x9f]/g;
 var reservedRe = /^\.+$/;
 var windowsReservedRe = /^(con|prn|aux|nul|com[0-9]|lpt[0-9])(\..*)?$/i;
 var windowsTrailingRe = /[\. ]+$/;
+var eacute = "é";
+var agrave = "à";
+var ugrave = "ù";
+var egrave = "è";
+var ecirc = "ê";
+var ocirc = "ô";
+var ucirc = "û";
+var ucirc2 = "û";
+var utrema = "ü";
+var otrema = "ö";
+var singlequote = "'";
+var singlequote_type2 = "’";
+var coma = ",";
+
 
 function sanitize(input, replacement) {
   if (typeof input !== 'string') {
@@ -45,7 +59,21 @@ function sanitize(input, replacement) {
     .replace(controlRe, replacement)
     .replace(reservedRe, replacement)
     .replace(windowsReservedRe, replacement)
-    .replace(windowsTrailingRe, replacement);
+    .replace(windowsTrailingRe, replacement)
+    .replace(eacute,"e")
+    .replace(agrave,"a")
+    .replace(ugrave,"u")
+    .replace(utrema,"u")
+    .replace(otrema,"o")
+    .replace(egrave,"e")
+    .replace(ecirc,"e")
+    .replace(ocirc,"o")
+    .replace(ucirc,"u")
+    .replace(ucirc2,"u")
+    .replace(coma," ")
+    .replace(singlequote,"_")
+    .replace(singlequote_type2,"_")
+    ;
   return truncate(sanitized, 255);
 }
 

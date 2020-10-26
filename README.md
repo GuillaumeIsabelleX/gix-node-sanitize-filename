@@ -1,5 +1,15 @@
 # sanitize-filename [![build status](https://secure.travis-ci.org/parshap/node-sanitize-filename.svg?branch=master)](http://travis-ci.org/parshap/node-sanitize-filename)
 
+
+## Guillaume Extention
+
+* French accent removal
+* Single quote replaced by underscore
+
+----
+# Original Distribution Readme
+----
+
 Sanitize a string to be safe for use as a filename by removing directory
 paths and invalid characters.
 

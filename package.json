@@ -1,7 +1,7 @@
 {
-  "name": "sanitize-filename",
-  "version": "1.6.3",
-  "description": "Sanitize a string for use as a filename",
+  "name": "gix-sanitize-filename",
+  "version": "1.6.9",
+  "description": "Sanitize a string for use as a filename (French support",
   "keywords": [
     "file",
     "name",
@@ -11,7 +11,7 @@
     "escape"
   ],
   "license": "WTFPL OR ISC",
-  "author": "Parsha Pourkhomami",
+  "author": "Parsha Pourkhomami & Guillaume Descoteaux-Isabelle(French extension etc)",
   "main": "index.js",
   "types": "index.d.ts",
   "repository": {
