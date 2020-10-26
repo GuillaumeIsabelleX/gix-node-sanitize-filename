@@ -46,6 +46,7 @@ var ucirc = "û";
 var ucirc2 = "û";
 var utrema = "ü";
 var otrema = "ö";
+var ccedil = "ç";
 var singlequote = "'";
 var singlequote_type2 = "’";
 var coma = ",";
@@ -72,6 +73,7 @@ function sanitize(input, replacement) {
     .replace(ocirc,"o")
     .replace(ucirc,"u")
     .replace(ucirc2,"u")
+    .replace(ccedil,"c")
     .replace(coma," ")
     .replace(singlequote,"_")
     .replace(singlequote_type2,"_")
