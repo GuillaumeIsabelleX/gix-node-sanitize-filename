@@ -36,6 +36,7 @@ var reservedRe = /^\.+$/;
 var windowsReservedRe = /^(con|prn|aux|nul|com[0-9]|lpt[0-9])(\..*)?$/i;
 var windowsTrailingRe = /[\. ]+$/;
 var eacute = "é";
+var eacute2 = "é";
 var agrave = "à";
 var ugrave = "ù";
 var egrave = "è";
@@ -61,6 +62,7 @@ function sanitize(input, replacement) {
     .replace(windowsReservedRe, replacement)
     .replace(windowsTrailingRe, replacement)
     .replace(eacute,"e")
+    .replace(eacute2,"e")
     .replace(agrave,"a")
     .replace(ugrave,"u")
     .replace(utrema,"u")

@@ -1,6 +1,6 @@
 {
   "name": "gix-sanitize-filename",
-  "version": "1.6.9",
+  "version": "1.6.10",
   "description": "Sanitize a string for use as a filename (French support",
   "keywords": [
     "file",
